@@ -70,7 +70,7 @@ export default function About() {
           <a href="https://xkcd.com/936/" title="Here's XKCD comic about password strength">
             passphrase
           </a>{' '}
-          like <em>craig-accuracy-czech-shall-venice</em> to secure your password vault,
+          like <em>city-accuracy-vehicle-shall-box</em> to secure your password vault,
           and long random passwords for individual accounts. Thankfully, browsers and
           operating systems now almost all have basic password management built it. And
           with the rise of biometric access controls (Face ID, et al) there’s really no
