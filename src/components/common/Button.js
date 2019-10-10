@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import theme from 'styles/theme';
 
-const { offWhite, offBlack, blue } = theme.colors;
+const { offWhite, offBlack, blue, rtPurple } = theme.colors;
 
 export default styled.button`
   margin-right: 0.5em;
@@ -26,8 +26,9 @@ export default styled.button`
     box-shadow: 0 0 0 0.2rem ${offBlack};
   }
   &:hover {
-    border: 0.1rem solid ${blue};
+    border: 0.1rem solid ${rtPurple};
     cursor: pointer;
+    color: ${rtPurple};
   }
   &:last-child {
     margin-right: 0;
