@@ -15,24 +15,25 @@ const StyledContainer = styled.div`
     color: crimson;
     margin: 0 0 -0.25rem 0;
   }
+  .the-classic-adding-green-colour-to-green{
+    color: hsla(105, 47%, 48%);
+    text-decoration: none;
+  }
 `;
 
 const Footer = () => {
   return (
     <StyledContainer>
-      <span className="v">v{config.version}</span>
+      <span className="v">Version: {config.version}</span>
       <br />
-      Coded by with{' '}
-      <span role="img" aria-label="love">
-        <Heart />
-      </span>{' '}
+      Written 
       by{' '}
       <a href="#" title="Tim">
-        TG
+        Tim <span class="the-classic-adding-green-colour-to-green">Green</span>
       </a>
       <br />{' '}
-      <a href="#" title="See the code on GitHub">
-        Gitty
+      <a href="https://github.com/tim-green/password-generator" title="See the code on GitHub">
+        GitHub
       </a>
     </StyledContainer>
   );
