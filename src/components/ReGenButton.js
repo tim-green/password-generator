@@ -20,7 +20,7 @@ export default function ReGenButton({ onClick }) {
   return (
     <Styles>
       <Button onClick={onClick} title="Generate new secrets (R)">
-        <RefreshIcon /> Regenerate Secrets
+        <RefreshIcon /> Regenerate
       </Button>
     </Styles>
   );
