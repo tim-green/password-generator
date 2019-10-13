@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import theme from 'styles/theme';
 
 const { inputHighlightColor } = theme;
-const { blue, offBlack } = theme.colors;
+const { blue, offBlack, rtPurple } = theme.colors;
 
 const Styles = styled.div`
   display: inline-block;
@@ -39,10 +39,10 @@ const Styles = styled.div`
     transition: all 300ms;
   }
   label:hover input ~ span {
-    border: 0.1rem solid ${blue};
+    border: 0.1rem solid ${rtPurple};
   }
   label input:checked ~ span {
-    background-color: ${inputHighlightColor};
+    background-color: ${rtPurple};
     border: 0.1rem solid transparent;
   }
   /* indicator */
@@ -59,7 +59,7 @@ const Styles = styled.div`
     top: 18%;
     width: 64%;
     height: 64%;
-    background: white;
+    background: ${rtPurple};
     border-radius: 50%;
   }
 `;
