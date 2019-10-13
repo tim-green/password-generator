@@ -1,4 +1,4 @@
-const version = '2019.2.15';
+const version = 'Pineapple Pink Monkey';
 
 const modes = {
   PW: 'password',
