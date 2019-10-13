@@ -53,7 +53,7 @@ export default function About() {
         </li>
         <li>
           Use a different password for every account. If a hacker hacks that site you used once months ago and you still reusing the same password on all of your accounts, you may be up the that certain creek. and now you have to change the
-          password on all 805 of your other accounts and that sucks. that why you should have a unique password
+          password on all of your other accounts and that sucks, that why you should have a unique password
           for every account is pretty much impossible without a password manager...
         </li>
         <li>
