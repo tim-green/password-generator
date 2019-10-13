@@ -32,7 +32,10 @@ export default createGlobalStyle`
     font-family: ${p => p.theme.fontFamilyHeadings};
     margin: 0 0 0.5em;
     font-weight: 400;
-    color: ${p => p.theme.colors.offWhite};
+    color: ${p => p.theme.colors.darkGray};
+    text-decoration-color: ${p => p.theme.colors.darkGray};
+    text-decoration-thickness: .125em;
+    text-underline-offset: 1.5px;
   }
   p { 
     margin: 0 0 0.5em;
