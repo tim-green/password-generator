@@ -62,7 +62,7 @@ export default function Header({ isPwaMode }) {
   return (
     <Styles isPwaMode={isPwaMode}>
       {!isPwaMode ? (
-        <h1>
+        <h1 class="whiteText">
           <span>
             <SecretTween scrambleOnClick alphaNumeric>
               Generate
