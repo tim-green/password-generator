@@ -9,6 +9,11 @@ const Styles = styled.header`
   h1 {
     line-height: 1;
     margin: 0;
+    text-shadow: 1px 3px 0px #000;
+  }
+  .whiteText{
+    color:#fff;
+    text-decoration: none;
   }
   h1 > span {
     transform: rotate(-3deg);
