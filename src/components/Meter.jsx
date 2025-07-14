@@ -60,6 +60,7 @@ export default function Meter({ entropy }) {
   const backgroundSpring = useSpring({
     config: { duration: 400 },
     backgroundColor: theme.meterColors[strength],
+    boxShadow: `0 0 1rem ${theme.meterColors[strength]}`
   });
 
   entropy = Math.round(entropy);

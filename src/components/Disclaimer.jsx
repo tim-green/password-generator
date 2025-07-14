@@ -19,7 +19,7 @@ export default function Disclaimer() {
       >
         cryptographically strong random number generator
       </a>{' '}
-      and are not transmitted or persisted in any way. Just look out for nosy people and
+     and are not transmitted or persisted in any way. Just look out for nosy people and
       close this browser tab when you're done... simple.
     </Styles>
   );

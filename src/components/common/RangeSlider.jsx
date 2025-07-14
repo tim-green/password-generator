@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import theme from 'styles/theme';
 
 const { inputHighlightColor } = theme;
-const { offBlack, blue, rtPurple } = theme.colors;
+const { offBlack, rtPurple } = theme.colors;
 
 const Styles = styled.div`
   margin: 0;

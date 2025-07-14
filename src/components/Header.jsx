@@ -60,6 +60,24 @@ const Styles = styled.header`
           margin-right: 0.25em;
         }
       }
+  `}
+  ${media.desktop`
+    padding: 7rem 0 4rem;
+  `}
+  ${(p) =>
+    p.isPwaMode &&
+    css`
+      padding: 2rem 0 1.5rem;
+      h1 > span {
+        display: inline-block;
+        transform: rotate(0);
+        &:first-child,
+        &:nth-child(2),
+        &:nth-child(3) {
+          font-size: 1em;
+          margin-right: 0.25em;
+        }
+      }
     `}
 `;
 
@@ -67,7 +85,7 @@ export default function Header({ isPwaMode }) {
   return (
     <Styles isPwaMode={isPwaMode}>
       {!isPwaMode ? (
-        <h1 class="whiteText">
+        <h1 className='whiteText'>
           <span>
             <SecretTween scrambleOnClick alphaNumeric>
               Generate

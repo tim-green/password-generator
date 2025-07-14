@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import theme from 'styles/theme';
 
 const { inputHighlightColor } = theme;
-const { offBlack, blue } = theme.colors;
+const { rtPurple, offBlack } = theme.colors;
 
 const Styles = styled.div`
   display: inline-block;
@@ -25,7 +25,7 @@ const Styles = styled.div`
     height: 0;
     width: 0;
   }
-  /* checkbox */
+  /* circle */
   span {
     box-sizing: content-box;
     position: absolute;
@@ -34,13 +34,12 @@ const Styles = styled.div`
     height: 1.5em;
     width: 1.5em;
     background-color: white;
-    border-radius: ${p => p.theme.borderRadius};
     border-radius: 50%;
     border: 0.1rem solid ${offBlack};
     transition: all 300ms;
   }
   label:hover input ~ span {
-    border: 0.1rem solid ${blue};
+    border: 0.1rem solid ${rtPurple};
   }
   label input:checked ~ span {
     background-color: ${inputHighlightColor};
@@ -56,24 +55,22 @@ const Styles = styled.div`
     display: block;
   }
   label span:after {
-    left: 30%;
-    top: 10%;
-    width: 25%;
-    height: 55%;
-    border: solid white;
-    border-width: 0 0.2em 0.2em 0;
-    transform: rotate(45deg);
-    border-radius: 0.1em;
+    left: 18%;
+    top: 18%;
+    width: 64%;
+    height: 64%;
+    background: white;
+    border-radius: 50%;
   }
 `;
 
-export default function CheckBox({ label, name, value, checked, onChange, ...props }) {
+export default function RadioButton({ label, name, value, checked, onChange, ...props }) {
   return (
     <Styles>
       <label>
         {label}
         <input
-          type="checkbox"
+          type="radio"
           name={name}
           value={value}
           checked={checked}

@@ -44,14 +44,10 @@ export default function PasswordParams({ values, onChange, isPwaMode }) {
   return (
     <Styles isPwaMode={isPwaMode}>
       {!isPwaMode && (
-        <p>
-          Good passwords are at least 12 characters long. If you can, include letters,
-          numbers, & symbols in random order. Make it as long as your account provider
-          will allow, you won’t be typing it anyway once you get a{' '}
-          <a href="#about" title="Good password hygiene">
-            password manager
-          </a>
-          .
+         <p>
+          Long passphrases are easy to remember (and type!) and are often just as secure
+          as a random string of characters, especially when they're longer than a password
+          would be. Makes a great choice for your "master" password.
         </p>
       )}
       <InputRow>

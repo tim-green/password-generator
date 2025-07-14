@@ -10,7 +10,7 @@ const StyledContainer = styled.div`
   .v {
     font-family: ${p => p.theme.fontFixed};
   }
-  svg {
+    svg {
     height: 1em;
     color: crimson;
     margin: 0 0 -0.25rem 0;
@@ -23,7 +23,7 @@ const StyledContainer = styled.div`
 
 const Footer = () => {
   return (
-    <StyledContainer>
+     <StyledContainer>
       <span className="v">Version: {config.version}</span>
       <br />
       Written 

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { media } from 'styles/helpers';
 
@@ -48,7 +47,7 @@ const Styles = styled.div`
 
 export default function ChoiceToggle({ choices, onToggle, initial }) {
   const labels = Object.keys(choices);
-  const [selected, setSelected] = useState(initial || labels[0]);
+  const [selected, setSelected] = useState(initial ?? labels[0]);
 
   const handleClick = label => {
     setSelected(label);
@@ -69,9 +68,3 @@ export default function ChoiceToggle({ choices, onToggle, initial }) {
     </Styles>
   );
 }
-
-ChoiceToggle.propTypes = {
-  choices: PropTypes.object.isRequired,
-  onToggle: PropTypes.func,
-  initial: PropTypes.string
-};

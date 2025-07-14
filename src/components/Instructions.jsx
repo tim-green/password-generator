@@ -11,7 +11,7 @@ const Styles = styled.div`
 export default function Instructions() {
   return (
     <Styles>
-      <h2>How does this work?</h2>
+         <h2>How does this work?</h2>
       <ol>
         <li>Set your parameters</li>
         <li>Choose a secret password, any will do</li>

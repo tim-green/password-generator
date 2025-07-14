@@ -45,7 +45,7 @@ export default function About() {
         ! Secure passwords are your first defense when safeguarding against threats
         online.
       </p>
-      <ul>
+       <ul>
         <li>Don’t use personal info in your passwords, like your dog’s birthday or even qwerty or just password.</li>
         <li>
           Don’t share credentials over email or text message. They’re completely wide-open
@@ -63,7 +63,7 @@ export default function About() {
             title="Hey google, can you search for 'password manager'"
           >
             plenty of great options
-          </a>
+          </a>  
           , many of these password managers include a free tier and even get one with a mobile app that syncs
           between all your devices, that way you’ll always have your passwords on you. Use
           a long but easy to remember "master"{' '}
@@ -85,6 +85,14 @@ export default function About() {
         <li>
           Change your “master” password periodically. It only takes a few minutes to
           permanently memorize a 5-word passphrase.
+        </li>
+        <li>
+          If you don't want to use Google to search for a password manager you can simple just my recommendation and use  <a
+            href="https://proton.me/pass"
+            title="if you don't want to google, just go with Proton Pass'"
+          >
+            proton pass
+          </a>.
         </li>
       </ul>
     </Styles>
